@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    padding: 0;
+    margin: 0;
+}
+h2{
+    font-weight: 700;
+}
+section {
+    margin: 50px 0;
+}
+
+:root {
+    --footer-color: black;
+
+    --bg-header-color: #0eb427;
+    --red-color: red;
+    --black-color: black;
+    --white-color: white;
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --box-shadow-2: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    --gray-color:gray;
+    --gold-color: gold;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+.navbar-light .navbar-brand {
+	color: rgba(0,0,0,.9);
+	width: 213px;
+}
+header .main_header .navbar {
+    background-color: var(--bg-header-color);
+}
+
+header .main_header .container .navbar-brand img{
+    width: 46%;
+}
+.main_header .container .collapse ul li {
+    padding-left: 20px;
+}
+
+.main_header .container .collapse ul li a {
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+
+}
+
+.main_header .container .collapse ul li a:hover {
+    color: var(--red-color);
+}
+
+.main_header .container .collapse ul li .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white-color);
+    left: 0;
+    bottom: -2px;
+    opacity: 0;
+
+}
+
+.active_manu a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white-color);
+    left: 0;
+    bottom: -2px;
+}
+
+.main_header .container .collapse ul li:hover .nav-link::after {
+    opacity: 1;
+}
+
+/* banner  */
+.main_banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* popular foods */
+
+.main_course .container .card {
+    box-shadow: var(--box-shadow);
+}
+
+.main_course .container .card:hover {
+    box-shadow: var(--box-shadow-2);
+}
+
+.main_course .container .card .img {
+    overflow: hidden;
+}
+
+.main_course .container .card .img img {
+    height: 200px;
+    transition: .4s;
+}
+
+.main_course .container .card:hover .img img {
+    transform: scale(1.2);
+}
+
+.main_course .container .main_price p{
+    font-size: 20px;
+    height: 20px;
+    align-content: center;
+}
+.main_course .container .main_price .col-6{
+    align-content: center;
+}
+/* feedback section  */
+
+
+.main_feedback .container img {
+    width: 100%;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.main_feedback .container .box-1 {
+    border: 1px solid var(--gray-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.main_feedback .container .box-1 .img {
+    overflow: hidden;
+}
+
+.main_feedback .container .box-1 .img img {
+    transition: .4s;
+}
+
+.main_feedback .container .box-1:hover .img img {
+    transform: scale(1.2);
+}
+
+.main_feedback .container .box-1 .rating{
+    margin-top: 20px;
+}
+.main_feedback .container .box-1 .rating i {
+    color: var(--gold-color);
+}
+
+/* gallary section  */
+
+.main_gallary .container .col-4 {
+    padding: 10px 10px;
+}
+
+.main_gallary .container .img {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.main_gallary .container .img img {
+    width: 100%;
+    height: 250px;
+    transition: .4s;
+}
+
+.main_gallary .container .col-4 .img:hover img {
+    transform: scale(1.3);
+}
+
+
+/* footer section */
+
+.footer_section {
+    background-color: var(--footer-color);
+    color: var(--white-color);
+    padding: 30px 0;
+}
+.footer_section .container .row{
+    margin: 0px 28px;
+}
+.footer_section .container h3 {
+
+    padding-bottom: 25px;
+}
+
+.footer_section .container ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer_section .container ul li {
+    padding: 5px 0;
+}
+
+.footer_section .container ul li:last-child {
+    padding-bottom: 30px;
+}
+
+.footer_section .container ul li a {
+    text-decoration: none;
+    color: var(--gray-color);
+    transition: .3s;
+}
+
+.footer_section .container ul li a:hover {
+    color: var(--text-color);
+}
+
+.footer_section .container h3 {
+    color: var(--text-color);
+    padding-bottom: 25px;
+}
+
+.footer_section .container p {
+    color: var(--text-color);
+    padding-bottom: 25px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.footer_section .container {
+    position: relative;
+}
+
+
+.footer_section .container input {
+    background-color: var(--input-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px 30px;
+}
+
+.footer_section .container input::placeholder {
+    color: var(--gray-color);
+}
+
+
+.footer_section .container .col-8 {
+    margin: 40px 0;
+}
+
+.footer_section .container .col-8 p {
+    color: var(--text-color);
+    padding-bottom: 25px;
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer_section .container .col-8 p span {
+    color: var(--h2-color);
+    font-size: 20px;
+}
+
+
+.footer_section .container .col-4 .icon {
+    height: 50px;
+    width: 50px;
+    background-color: var(--input-color);
+    align-content: center;
+    text-align: center;
+    margin-top: 40px;
+    transition: .3s;
+}
+
+.footer_section .container .col-4 .icon i {
+    font-size: 23px;
+    color: var(--text-color);
+}
+
+.footer_section .container .col-4 .icon:hover {
+    background-color: var(--h2-color);
+}
+
+.footer_section .container .col-4 .icon:hover i {
+    color: var(--primary-color-btn);
+}
+
+.bottom_footer .content {
+    color: var(--white-color);
+    padding: 10px 0;
+}
+
+/* about page style start  */
+/* banner  */
+.banner {
+    background-image: url('asets/gallary-pic-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+
+}
+
+.banner .breadcrumb-2{
+    font-style: italic;
+    text-align: center;
+    align-content: center;
+    color: var(--black-color);
+    height: 100%;
+}
+.banner .breadcrumb-2 h5{
+    font-weight: 800;
+}
+.banner .breadcrumb-2 a {
+    color: var(--black-color);
+    font-weight: 800;
+
+
+}
+
+/* company staff  */
+
+.main_staff .container .card .img img {
+    width: 100%;
+    height: 260px;
+    transition: .4s;
+}
+
+.main_staff .container .card a {
+    color: black;
+    text-decoration: none;
+}
+
+.main_staff .container .card ul li {
+    list-style-type: none;
+}
+
+.main_staff .container .card .img {
+    overflow: hidden;
+   
+}
+
+.main_staff .container .card:hover .img img {
+    transform: scale(1.2);
+}
+
+/* COMPANY ABOUTM DESIGN  */
+
+.main_company .container .row .img img{
+    width: 100%;
+    border-radius: 5px;
+  transition: .4s;
+}
+.main_company .container .row .img{
+    overflow: hidden;
+}
+.main_company .container .row .img:hover img{
+    transform: scale(1.2);
+}
+.main_company .container .row .content {
+    align-content: center;
+    height: 100%;
+}
+
+.main_company .container .row .content .btn a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+
+/* medea quary  */
+
+@media only screen and (min-width: 576px) { 
+    .main_feedback .container h2{
+      margin-top: 30px;
+    }
+   }
+  
